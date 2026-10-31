@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# AURA local development files
+node_modules/
+*.db
+*.sqlite
+*.sqlite3
+.DS_Store
+AURA_READY_TO_UPLOAD/
