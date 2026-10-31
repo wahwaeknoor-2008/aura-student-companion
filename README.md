@@ -1,9 +1,19 @@
-# aura-student-companion
-An AI-powered student companion for emotional wellbeing, academic productivity, healthy habits and everyday assistance.
+# AURA Backend
 
-University life involves more than attending lectures and completing assignments. Students must balance academic responsibilities, personal routines, social relationships, health habits and everyday tasks, often while living away from their families for the first time.
+FastAPI starter API.
 
-AURA brings these responsibilities together in one place. It helps students organize their days, build healthy routines, learn practical life skills and access supportive conversations when university life becomes overwhelming.
+Run locally:
 
-Rather than acting as just another chatbot or productivity tracker, AURA aims to become a personalized companion that helps students become more independent, organized and confident.
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
+uvicorn app.main:app --reload
+```
 
+Health endpoint: `GET /health`
+
+Interactive API docs: `/docs`
+
+No database, authentication, or AI provider is connected yet.

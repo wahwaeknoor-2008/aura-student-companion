@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "AURA",
+    "slug": "aura-student-companion",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true
+  }
+}
