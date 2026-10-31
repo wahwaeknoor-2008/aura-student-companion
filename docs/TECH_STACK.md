@@ -4,6 +4,7 @@
 
 AURA will use a modular mobile and backend architecture.
 
+
 The initial stack prioritizes developer productivity, maintainability, scalability, and privacy.
 
 ## 2. Frontend — Mobile Application
