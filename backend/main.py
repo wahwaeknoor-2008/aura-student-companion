@@ -1,4 +1,3 @@
-
 import asyncio
 import base64
 import hashlib
@@ -297,9 +296,11 @@ def register_student(request: RegisterRequest):
 
         db.commit()
 
-        # DEVELOPMENT ONLY. Replace with real email delivery before launch.
+                # DEVELOPMENT ONLY. Replace with real email delivery before launch.
         if os.getenv("AURA_DEV_MODE", "true").lower() == "true":
             logger.info("DEV verification code for %s: %s", email, code)
+            with open("/tmp/aura-verification.log", "a", encoding="utf-8") as log_file:
+                log_file.write(f"DEV verification code for {email}: {code}\n")
 
         return {
             "message": "If this address is eligible, a verification code will be sent.",
