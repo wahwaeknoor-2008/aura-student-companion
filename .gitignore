@@ -226,3 +226,4 @@ node_modules/
 *.sqlite3
 .DS_Store
 AURA_READY_TO_UPLOAD/
+*.zip
